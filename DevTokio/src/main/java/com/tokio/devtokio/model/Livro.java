@@ -65,6 +65,6 @@ public class Livro implements Serializable{
 	public String toString() {
 		return "Livro [id=" + id + ", nome=" + nome + ", autores=" + autores + "]";
 	}
-	
+
 	
 }
