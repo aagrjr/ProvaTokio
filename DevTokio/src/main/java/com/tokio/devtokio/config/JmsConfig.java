@@ -50,12 +50,5 @@ public class JmsConfig {
     public JmsTemplate jmsTemplate() {
         return new JmsTemplate(connectionFactory());
     }
-
-    @Bean
-    public JmsTemplate jmsTemplateTopic() {
-        JmsTemplate jmsTemplate = new JmsTemplate(connectionFactory());
-        jmsTemplate.setPubSubDomain( true );
-        return jmsTemplate;
-    }
      
 }
